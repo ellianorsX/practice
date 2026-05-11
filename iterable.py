@@ -37,12 +37,35 @@ for key in person_obj:
     print(f"the key: {key} > value {person_obj.get(key)}")
 
 # key : value
-Har bir yozuv kalitdan (nom) va qiymatdan iborat. Kalit noyob bo'lishi shart.
+# Harbiryozuv kalitdan nom va qiymatdan iborat Kalit noyob bolishi shart.
 
 # .get(key, default)
-Kalitni qidirib qiymat beradi. Topilmasa — default qiymat. Xato bermaydi.
+# Kalitni qidirib qiymat beradi, Topilmasa default qiymatXato bermaydi.
 
 # del dict[key]
-Ko'rsatilgan kalitni lug'atdan o'chirib tashlaydi.
+# Korsatilgan kalitni lugatdan ochirib tashlaydi.
 
 # person["hobby"] → KeyError! Lekin person.get("hobby") → None, xato bermaydi. Har doim .get() ishlatish xavfsizroq.
+
+
+
+
+
+
+
+print("======= Error handling system =======")
+car_dict = dict(name="Tayota", year=2027, electric=True)
+
+try:
+    print("passed here")
+    a = car_dict.speed
+    results = car_dict["origin"]
+    print("result:", results)
+except KeyError as err:
+    print("No origin state property found:", err)
+except ArithmeticError as err:
+    print("No SPEED found:", err)
+else:
+    print("Executed successfully without errors")
+finally:
+    print("Final closing logic")
