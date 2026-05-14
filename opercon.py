@@ -5,7 +5,7 @@
 '''
 
 print("===== Operators =====")
-# + - > >= < <= == is * / // % += -= **
+# + - > >= < <= == is * / // % += -= ** referance uchun (is)
 
 a = 19
 b = 5
@@ -33,3 +33,56 @@ print(id(c), id(d), id(e))
 
 print("c is d", c is d)
 print("c is e", c is e)
+
+
+print("===== CONDITIONS =====")
+
+x = 15
+
+if x > 50:
+    print("case A")
+    
+elif x > 10:
+    print("case B")
+    
+else:
+    print("case c")
+    
+print("----------")  
+
+
+
+print("===== LOGICAL OPERATIONS =====")
+
+age = 21 
+
+# person = None
+# if age > 16:
+#     person = "adult"
+    
+# else:
+#     person = "minor"    
+        
+        # TERNARY oper
+person = "adult" if age > 18 else "minor" 
+print("person:", person)       
+
+print("=====  =====")
+
+# and or
+
+is_student = False
+is_Engineer = True
+is_SeniorCTO = True
+is_Drprofesser = True
+is_President = False
+
+if not is_student:
+    print("Wellcome here, do u want to be student!")
+elif is_Engineer:
+    print("Please go to office!")
+elif is_SeniorCTO:
+    print("We need to your help!")
+    
+else:
+    print("other case")    
