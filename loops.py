@@ -29,3 +29,36 @@ for key in car_obj:
 print("-------------------")
 for x in range(1, 20, 5):
     print(f"the x: {x}")
+    
+    
+    
+    
+print("========== break/else ==========")
+for x in range(1, 20, 8):
+    print(f"the x: {x}")
+    if x > 100:
+        print("Reached break")
+        break
+else:
+    print("Executed successfully")
+    
+    
+    
+    
+print("========== while operator ==========")
+numb = 40
+while numb > 0:
+    numb -= 10
+    print(f"the numb equals {numb}")
+    
+print("==============")
+count = 0
+while True:
+    count += 1
+    x = int(input("Find number"))
+    
+    if x == 41:
+        print(f"You found number in {count} steps")
+        break
+    else:
+        print("Wrong, please find again!")
